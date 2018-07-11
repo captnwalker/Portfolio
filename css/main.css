@@ -6975,6 +6975,11 @@ table.highlight tbody tr:hover {
 .tbl {
   font-size: 1.4em; }
 
+.user-nav__icon {
+  height: .9rem;
+  width: .9rem;
+  fill: #f8f865; }
+
 @media only screen and (max-width: 992px) {
   h3 {
     font-size: 2.5em; } }

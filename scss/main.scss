@@ -215,6 +215,12 @@ table.highlight tbody tr:hover {
   font-size: 1.4em;
 }
 
+.user-nav__icon {
+    height: .9rem;
+    width: .9rem;
+    fill: rgb(248, 248, 101);
+  }  
+
 // Media queries for med viewports
 @media #{$medium-and-down} {
   h3 {

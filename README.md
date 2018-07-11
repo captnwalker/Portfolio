@@ -1,6 +1,6 @@
 # Steve Walker's Portfolio - Updated July 2018
 
-> Showcase of Steve Walker's Projects through April 2018
+> Showcase of Steve Walker's Projects through July 2018
 
 ## Link to Live Site
 
@@ -13,6 +13,7 @@
 ### Tech Stack
 
 * SASS/SCSS
+* SVG Icons
 * HTML5
 * JavaScript
 * MaterializeCSS
