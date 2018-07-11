@@ -195,14 +195,21 @@ table.highlight tbody tr:hover {
   .banner {
     font-size: 2em !important;
   }
+// Adjusts position of "burger" icon on mobile viewports
+  .burger {
+    margin-left: -50px;
+  }
+
   .main-header {
     height: 180px;
   }
+
   .sub-banner {
     font-size: 1.5em !important;
   } // .tooltip {
   //   visibility: hidden;
   // }
+
   .modal-text {
     font-size: 1rem;
   }

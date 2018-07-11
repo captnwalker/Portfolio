@@ -6963,6 +6963,9 @@ table.highlight tbody tr:hover {
   .banner {
     font-size: 2em !important; }
 
+  .burger {
+    margin-left: -50px; }
+
   .main-header {
     height: 180px; }
 
