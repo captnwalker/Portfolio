@@ -24,54 +24,61 @@ $(document).ready(function () {
 
   // Scroll Fire params
   const options = [{
-      selector: '.row-1',
-      offset: 100,
-      callback: function (el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '.row-2',
-      offset: 250,
-      callback: function (el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '.row-3',
-      offset: 300,
-      callback: function (el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '.row-4',
-      offset: 340,
-      callback: function (el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '.row-5',
-      offset: 360,
-      callback: function (el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '.row-6',
-      offset: 385,
-      callback: function (el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '.row-7',
-      offset: 410,
-      callback: function (el) {
-        Materialize.fadeInImage($(el));
-      }
+    selector: '.row-1',
+    offset: 100,
+    callback: function (el) {
+      Materialize.fadeInImage($(el));
     }
+  },
+  {
+    selector: '.row-2',
+    offset: 250,
+    callback: function (el) {
+      Materialize.fadeInImage($(el));
+    }
+  },
+  {
+    selector: '.row-3',
+    offset: 300,
+    callback: function (el) {
+      Materialize.fadeInImage($(el));
+    }
+  },
+  {
+    selector: '.row-4',
+    offset: 340,
+    callback: function (el) {
+      Materialize.fadeInImage($(el));
+    }
+  },
+  {
+    selector: '.row-5',
+    offset: 360,
+    callback: function (el) {
+      Materialize.fadeInImage($(el));
+    }
+  },
+  {
+    selector: '.row-6',
+    offset: 385,
+    callback: function (el) {
+      Materialize.fadeInImage($(el));
+    }
+  },
+  {
+    selector: '.row-7',
+    offset: 410,
+    callback: function (el) {
+      Materialize.fadeInImage($(el));
+    }
+  },
+  {
+    selector: '.row-8',
+    offset: 435,
+    callback: function (el) {
+      Materialize.fadeInImage($(el));
+    }
+  }
   ];
 
   Materialize.scrollFire(options);

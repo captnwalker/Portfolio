@@ -6860,6 +6860,9 @@ body {
   position: relative;
   width: 100%; }
 
+.connect:hover {
+  color: #00dcf4; }
+
 .desc {
   font-size: 1.2em;
   line-height: 1.6; }
@@ -6878,7 +6881,10 @@ h5 {
   justify-content: center; }
 
 .in-line-link {
-  color: #f8f865; }
+  color: #f8f865;
+  cursor: pointer; }
+  .in-line-link:hover {
+    color: #00dcf4; }
 
 .main-header {
   color: #fff;
@@ -6895,8 +6901,15 @@ h5 {
     margin: 0;
     padding-top: 30px; }
 
+.responsive-img {
+  width: 100%; }
+
 .modal {
-  background: #0097a7; }
+  background: #0097a7;
+  height: fit-content; }
+
+.modal-text {
+  font-size: 1.2rem; }
 
 .modal-footer {
   background-color: #00808e !important;
@@ -6929,7 +6942,8 @@ table.highlight tbody tr:hover {
 .row-4,
 .row-5,
 .row-6,
-.row-7 {
+.row-7,
+.row-8 {
   opacity: 0; }
 
 .sidenav-header {
@@ -6953,6 +6967,7 @@ table.highlight tbody tr:hover {
     height: 180px; }
 
   .sub-banner {
-    font-size: 1.5em !important; } }
+    font-size: 1.5em !important; }
 
-/*# sourceMappingURL=main.css.map */
+  .modal-text {
+    font-size: 1rem; } }

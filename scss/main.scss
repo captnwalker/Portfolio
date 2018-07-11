@@ -13,6 +13,7 @@ $header-height: 270px;
   }
 }
 
+
 // Changes the background color of tooltips
 .backdrop {
   background-color: $primary-color;
@@ -20,7 +21,7 @@ $header-height: 270px;
 
 body {
   background: $primary-color;
-  color: set-text-color($primary-color);
+  color: set-text-color($primary-color);  
 }
 
 .brand-logo {
@@ -44,6 +45,10 @@ body {
   font-family: 'Raleway', sans-serif !important;
   position: relative;
   width: 100%;
+}
+
+.connect:hover {
+  color: $primary-color-light;
 }
 
 .desc {
@@ -78,7 +83,15 @@ h5 {
 
 .in-line-link {
   color: rgb(248, 248, 101);
-}
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-color-light;;
+    //color: rgb(240, 221, 57);
+    //transform:   !important;
+  }
+ } 
+
 
 .main-header {
   color: $text-color;
@@ -97,8 +110,19 @@ h5 {
   }
 }
 
+.responsive-img {
+  width: 100%;
+}
+
 .modal {
   background: $primary-color;
+  height: fit-content;
+
+}
+
+
+.modal-text {
+  font-size: 1.2rem;
 }
 
 .modal-footer {
@@ -140,7 +164,8 @@ table.highlight tbody tr:hover {
 .row-4,
 .row-5,
 .row-6,
-.row-7 {
+.row-7,
+.row-8 {
   opacity: 0;
 }
 
@@ -178,4 +203,7 @@ table.highlight tbody tr:hover {
   } // .tooltip {
   //   visibility: hidden;
   // }
+  .modal-text {
+    font-size: 1rem;
+  }
 }
