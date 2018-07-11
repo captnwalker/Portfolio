@@ -13,6 +13,38 @@ $header-height: 270px;
   }
 }
 
+// Custom scroll bar
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $secondary-color-light; 
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  // background: $primary-color-dark; 
+  background-size: cover;
+  background-image: -webkit-gradient(linear,
+  left bottom,
+  left top,
+  color-stop(0.44, rgb(53, 227, 240)),
+  color-stop(0.72, rgb(21, 184, 196)),
+  color-stop(0.86, rgb(17, 174, 185)));
+
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color-light; 
+}
+
+// End Custom scroll bar
 
 // Changes the background color of tooltips
 .backdrop {
@@ -197,7 +229,7 @@ table.highlight tbody tr:hover {
   }
 // Adjusts position of "burger" icon on mobile viewports
   .burger {
-    margin-left: -50px;
+    margin-left: -70px;
   }
 
   .main-header {
@@ -205,7 +237,7 @@ table.highlight tbody tr:hover {
   }
 
   .sub-banner {
-    font-size: 1.5em !important;
+    font-size: 1.2em !important;
   } // .tooltip {
   //   visibility: hidden;
   // }
