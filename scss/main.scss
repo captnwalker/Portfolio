@@ -44,6 +44,10 @@ $header-height: 270px;
   background: $primary-color-light; 
 }
 
+/* Gutter */
+// ::-webkit-scrollbar-track-piece {
+//   background: $primary-color; 
+// }
 // End Custom scroll bar
 
 // Changes the background color of tooltips
@@ -51,9 +55,34 @@ $header-height: 270px;
   background-color: $primary-color;
 }
 
+.banner {
+  backface-visibility: hidden;
+  // margin-bottom: 3rem;
+  // text-shadow: 1.5px 1.5px $color-black;
+
+    //display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.sub-banner {
+    //display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .75rem;
+    animation: moveInRight 1s ease-out;
+}
+
 body {
   background: $primary-color;
-  color: set-text-color($primary-color);  
+  color: set-text-color($primary-color);
+  // Hides horizantal scrollbar when header img is zoomed
+  overflow-x: hidden;
 }
 
 .brand-logo {
@@ -81,6 +110,7 @@ body {
 
 .connect:hover {
   color: $primary-color-light;
+  transition: all 1s;
 }
 
 .desc {
@@ -118,9 +148,8 @@ h5 {
   cursor: pointer;
 
   &:hover {
-    color: $primary-color-light;;
-    //color: rgb(240, 221, 57);
-    //transform:   !important;
+    color: $primary-color-light;
+    transition: all 1s;
   }
  } 
 
@@ -129,10 +158,26 @@ h5 {
   color: $text-color;
   height: $header-height;
   width: 100%;
+  position: relative;
   margin-bottom: 30px;
   background-size: cover;
+  z-index: 10;
+}
+
+  .bg-img {
+    height: $header-height;
   background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(../img/pexels-photo-247791.png);
-  position: relative;
+  z-index: -5;
+  
+  // &:hover {
+  //   transform: scale(1.05) translateY(-0.5rem);
+  //   //transition: ease-in .8s;
+  //   transition: all .8s ease-in-out;
+  //   overflow: hidden;
+  //  padding-top: 1rem;
+  //   }
+  }
+
   h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 3.8em;
@@ -140,7 +185,7 @@ h5 {
     margin: 0;
     padding-top: 30px;
   }
-}
+
 
 .responsive-img {
   width: 100%;
@@ -219,10 +264,34 @@ table.highlight tbody tr:hover {
     height: .9rem;
     width: .9rem;
     fill: rgb(248, 248, 101);
-  }  
+
+    &:hover {
+      fill: $primary-color-light;
+      transition: all 1s;
+  }
+}
 
 // Media queries for med viewports
 @media #{$medium-and-down} {
+
+  .banner {
+    font-size: .6rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    
+    animation-name: none;
+    animation-duration: 0;
+    animation-timing-function: 0;
+  }
+
+  .sub-banner {
+    //display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    animation: none;
+  }
+
   h3 {
     font-size: 2.5em;
   }
@@ -238,15 +307,17 @@ table.highlight tbody tr:hover {
     margin-left: -70px;
   }
 
+  .card-title {
+    font-size: 1.2em !important;
+  }
+
   .main-header {
     height: 180px;
   }
 
   .sub-banner {
-    font-size: 1.2em !important;
-  } // .tooltip {
-  //   visibility: hidden;
-  // }
+    font-size: 1em !important;
+  }
 
   .modal-text {
     font-size: 1rem;

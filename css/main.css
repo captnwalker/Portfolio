@@ -6835,6 +6835,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/ }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  /* 80% {
+    transform: translateX(10px);
+  } */
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  /* 80% {
+    transform: translateX(-1rem);
+  } */
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 /* width */
 ::-webkit-scrollbar {
   width: 12px; }
@@ -6854,12 +6874,29 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 ::-webkit-scrollbar-thumb:hover {
   background: #00dcf4; }
 
+/* Gutter */
 .backdrop {
   background-color: #0097a7; }
 
+.banner {
+  backface-visibility: hidden;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+.sub-banner {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: .75rem;
+  animation: moveInRight 1s ease-out; }
+
 body {
   background: #0097a7;
-  color: #fff; }
+  color: #fff;
+  overflow-x: hidden; }
 
 .brand-logo {
   font-family: 'Raleway', sans-serif;
@@ -6880,7 +6917,8 @@ body {
   width: 100%; }
 
 .connect:hover {
-  color: #00dcf4; }
+  color: #00dcf4;
+  transition: all 1s; }
 
 .desc {
   font-size: 1.2em;
@@ -6903,22 +6941,29 @@ h5 {
   color: #f8f865;
   cursor: pointer; }
   .in-line-link:hover {
-    color: #00dcf4; }
+    color: #00dcf4;
+    transition: all 1s; }
 
 .main-header {
   color: #fff;
   height: 270px;
   width: 100%;
+  position: relative;
   margin-bottom: 30px;
   background-size: cover;
+  z-index: 10; }
+
+.bg-img {
+  height: 270px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(../img/pexels-photo-247791.png);
-  position: relative; }
-  .main-header h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 3.8em;
-    font-weight: 100;
-    margin: 0;
-    padding-top: 30px; }
+  z-index: -5; }
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.8em;
+  font-weight: 100;
+  margin: 0;
+  padding-top: 30px; }
 
 .responsive-img {
   width: 100%; }
@@ -6979,8 +7024,25 @@ table.highlight tbody tr:hover {
   height: .9rem;
   width: .9rem;
   fill: #f8f865; }
+  .user-nav__icon:hover {
+    fill: #00dcf4;
+    transition: all 1s; }
 
 @media only screen and (max-width: 992px) {
+  .banner {
+    font-size: .6rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    animation-name: none;
+    animation-duration: 0;
+    animation-timing-function: 0; }
+
+  .sub-banner {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    animation: none; }
+
   h3 {
     font-size: 2.5em; } }
 @media only screen and (max-width: 600px) {
@@ -6990,11 +7052,14 @@ table.highlight tbody tr:hover {
   .burger {
     margin-left: -70px; }
 
+  .card-title {
+    font-size: 1.2em !important; }
+
   .main-header {
     height: 180px; }
 
   .sub-banner {
-    font-size: 1.2em !important; }
+    font-size: 1em !important; }
 
   .modal-text {
     font-size: 1rem; } }
