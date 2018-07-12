@@ -292,6 +292,11 @@ table.highlight tbody tr:hover {
     animation: none;
   }
 
+  .bg-img {
+    height: auto;
+    padding-bottom: .5rem;
+  }
+
   h3 {
     font-size: 2.5em;
   }
@@ -302,6 +307,7 @@ table.highlight tbody tr:hover {
   .banner {
     font-size: 2em !important;
   }
+
 // Adjusts position of "burger" icon on mobile viewports
   .burger {
     margin-left: -70px;
