@@ -46,35 +46,35 @@ $(document).ready(function () {
   },
   {
     selector: '.row-4',
-    offset: 340,
+    offset: 325,
     callback: function (el) {
       Materialize.fadeInImage($(el));
     }
   },
   {
     selector: '.row-5',
-    offset: 360,
+    offset: 350,
     callback: function (el) {
       Materialize.fadeInImage($(el));
     }
   },
   {
     selector: '.row-6',
-    offset: 385,
+    offset: 375,
     callback: function (el) {
       Materialize.fadeInImage($(el));
     }
   },
   {
     selector: '.row-7',
-    offset: 410,
+    offset: 400,
     callback: function (el) {
       Materialize.fadeInImage($(el));
     }
   },
   {
     selector: '.row-8',
-    offset: 435,
+    offset: 425,
     callback: function (el) {
       Materialize.fadeInImage($(el));
     }
