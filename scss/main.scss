@@ -275,10 +275,9 @@ table.highlight tbody tr:hover {
 @media #{$medium-and-down} {
 
   .banner {
-    font-size: .6rem;
+    font-size: 4rem;
     font-weight: 300;
-    letter-spacing: .1rem;
-    
+    letter-spacing: .1rem;    
     animation-name: none;
     animation-duration: 0;
     animation-timing-function: 0;
@@ -286,16 +285,21 @@ table.highlight tbody tr:hover {
 
   .sub-banner {
     //display: block;
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: .2rem;
     animation: none;
+    padding-bottom: 3.5rem;
   }
 
   .bg-img {
     height: auto;
     padding-bottom: .5
     rem;
+  }
+
+  .burger {
+    margin-left: -45px;
   }
 
   h3 {
@@ -319,11 +323,13 @@ table.highlight tbody tr:hover {
   }
 
   .main-header {
-    height: 180px;
+    // height: 180px;
+    height: 14rem;
   }
 
   .sub-banner {
     font-size: 1em !important;
+    padding-bottom: 3.5rem;
   }
 
   .modal-text {

@@ -7030,7 +7030,7 @@ table.highlight tbody tr:hover {
 
 @media only screen and (max-width: 992px) {
   .banner {
-    font-size: .6rem;
+    font-size: 4rem;
     font-weight: 300;
     letter-spacing: .1rem;
     animation-name: none;
@@ -7038,14 +7038,18 @@ table.highlight tbody tr:hover {
     animation-timing-function: 0; }
 
   .sub-banner {
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: .2rem;
-    animation: none; }
+    animation: none;
+    padding-bottom: 3.5rem; }
 
   .bg-img {
     height: auto;
     padding-bottom: .5 rem; }
+
+  .burger {
+    margin-left: -45px; }
 
   h3 {
     font-size: 2.5em; } }
@@ -7060,10 +7064,11 @@ table.highlight tbody tr:hover {
     font-size: 1.2em !important; }
 
   .main-header {
-    height: 180px; }
+    height: 14rem; }
 
   .sub-banner {
-    font-size: 1em !important; }
+    font-size: 1em !important;
+    padding-bottom: 3.5rem; }
 
   .modal-text {
     font-size: 1rem; } }
